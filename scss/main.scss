@@ -1,0 +1,134 @@
+@import "vars";
+@import "mixins";
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+}
+
+html,
+body {
+    min-height: 100vh;
+    font-family: $font-family-main;
+    font-size: $font-size-main;
+    color: $font-family-color;
+}
+
+
+.hero {
+    max-width: 1440px;
+    width: 100%;
+    // max-height: 600px;
+    height: 600px;
+    margin: 0 auto;
+    background-image: url(../assets/img/bg-image.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding-top: 100px;
+
+
+    &__title {
+        width: $container-width;
+        // margin-top: 100px;
+        margin-left: auto;
+        margin-right: auto;
+        @include title(48px, 600, 64px, 0.1em);
+    }
+}
+
+.container {
+    max-width: $container-width;
+    margin: 0 auto;
+}
+
+.section {
+    margin-top: 90px;
+
+    &__title {
+        @include title(48px, 400, 64px, 0.05em);
+    }
+}
+
+.article {
+    @include flex();
+    gap: 30px;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+
+    &__info {
+        max-width: 500px;
+    }
+
+    &__tag {
+        font-size: 16px;
+        margin: 0;
+        letter-spacing: 0.05em;
+    }
+
+    &__title {
+        max-width: 370px;
+        @include title(23px, 500, 38px, 00.1em);
+        margin: 30px 0 15px 0;
+    }
+
+    &__date {
+        font-size: $font-size-main;
+        margin-bottom: 50px;
+
+    }
+
+    &__description {
+
+        line-height: 27px;
+        letter-spacing: 0.05em;
+    }
+}
+
+.posts-heading {
+    @include flex();
+    align-items: center;
+    height: 38px;
+    margin-top: 90px;
+    margin-bottom: 50px;
+
+    &__title {
+        @include title(28px, 600, 46px, 0.1em);
+    }
+
+    &__link {
+
+        line-height: 26.56px;
+        letter-spacing: 0.1em;
+    }
+}
+
+.posts {
+    @include flex();
+}
+
+.post {
+    max-width: 370px;
+
+    &__heading {
+        @include flex();
+    }
+
+    &__tag,
+    &__date {
+        font-size: 12px;
+        line-height: 20px;
+        letter-spacing: 0.1em;
+        margin: 25px 0;
+    }
+
+    &__title {
+        @include title(22px, 500, 36px, 0.1em);
+        margin: 0;
+    }
+
+    &__text {
+        line-height: 26px;
+        letter-spacing: 0.05em;
+    }
+}
