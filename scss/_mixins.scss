@@ -9,8 +9,14 @@
     letter-spacing: $space;
 }
 
+<<<<<<< HEAD
 @mixin flex($content, $direction) {
     display: flex;
     justify-content: $content;
     flex-direction: $direction;
+=======
+@mixin flex() {
+    display: flex;
+    justify-content: space-between;
+>>>>>>> de1fc606f2416921c79d9f980030081bacdca11c
 }

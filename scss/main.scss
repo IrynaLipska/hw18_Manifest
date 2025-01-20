@@ -1,12 +1,18 @@
+<<<<<<< HEAD
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap');
 @import 'vars';
 @import 'mixins';
+=======
+@import "vars";
+@import "mixins";
+>>>>>>> de1fc606f2416921c79d9f980030081bacdca11c
 
 * {
     box-sizing: border-box;
     padding: 0;
 }
 
+<<<<<<< HEAD
 ul,
 ol,
 dl {
@@ -240,6 +246,44 @@ body {
 }
 
 .blog {
+=======
+html,
+body {
+    min-height: 100vh;
+    font-family: $font-family-main;
+    font-size: $font-size-main;
+    color: $font-family-color;
+}
+
+
+.hero {
+    max-width: 1440px;
+    width: 100%;
+    // max-height: 600px;
+    height: 600px;
+    margin: 0 auto;
+    background-image: url(../assets/img/bg-image.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding-top: 100px;
+
+
+    &__title {
+        width: $container-width;
+        // margin-top: 100px;
+        margin-left: auto;
+        margin-right: auto;
+        @include title(48px, 600, 64px, 0.1em);
+    }
+}
+
+.container {
+    max-width: $container-width;
+    margin: 0 auto;
+}
+
+.section {
+>>>>>>> de1fc606f2416921c79d9f980030081bacdca11c
     margin-top: 90px;
 
     &__title {
@@ -247,6 +291,7 @@ body {
     }
 }
 
+<<<<<<< HEAD
 .row-reverse {
     flex-direction: row-reverse;
 
@@ -301,6 +346,17 @@ body {
         max-width: 100%;
         height: auto;
         display: block;
+=======
+.article {
+    @include flex();
+    gap: 30px;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+
+    &__info {
+        max-width: 500px;
+>>>>>>> de1fc606f2416921c79d9f980030081bacdca11c
     }
 
     &__tag {
@@ -326,6 +382,7 @@ body {
         line-height: 27px;
         letter-spacing: 0.05em;
     }
+<<<<<<< HEAD
 
 
 }
@@ -336,6 +393,13 @@ body {
     @include flex(space-between, row);
     align-items: center;
     max-width: $width_container;
+=======
+}
+
+.posts-heading {
+    @include flex();
+    align-items: center;
+>>>>>>> de1fc606f2416921c79d9f980030081bacdca11c
     height: 38px;
     margin-top: 90px;
     margin-bottom: 50px;
@@ -352,6 +416,7 @@ body {
 }
 
 .posts {
+<<<<<<< HEAD
     @include flex(space-between, row);
     flex-wrap: wrap;
 
@@ -363,10 +428,14 @@ body {
         gap: 30px;
 
     }
+=======
+    @include flex();
+>>>>>>> de1fc606f2416921c79d9f980030081bacdca11c
 }
 
 .post {
     max-width: 370px;
+<<<<<<< HEAD
     @include flex(space-between, column-reverse);
 
     @media screen and (max-width: 768px) {
@@ -376,6 +445,11 @@ body {
 
     &__heading {
         @include flex(space-between, row);
+=======
+
+    &__heading {
+        @include flex();
+>>>>>>> de1fc606f2416921c79d9f980030081bacdca11c
     }
 
     &__tag,
@@ -395,6 +469,7 @@ body {
         line-height: 26px;
         letter-spacing: 0.05em;
     }
+<<<<<<< HEAD
 }
 
 @media screen and (max-width: 768px) {
@@ -533,4 +608,6 @@ body {
         }
 
     }
+=======
+>>>>>>> de1fc606f2416921c79d9f980030081bacdca11c
 }
